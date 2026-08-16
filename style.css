@@ -142,7 +142,7 @@ main { flex: 1; padding-top: 70px; animation: fadeIn 0.4s ease forwards; }
 .contact-clean { padding: 2rem 0; text-align: left; }
 .contact-clean h2 { font-size: 2rem; margin-bottom: 1rem; color: var(--text-primary); font-weight: 600; }
 .contact-clean p { font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
-.email-highlight { font-size: clamp(1rem, 4vw, 1.2rem); color: var(--text-primary); font-weight: 600; margin-top: 1.5rem; display: inline-block;  word-break: break-all; }
+.email-highlight { font-size: clamp(1rem, 4vw, 1.2rem); /*color: var(--text-primary);*/ font-weight: 600; margin-top: 1.5rem; display: inline-block;  word-break: break-all; }
 .opportunities-heading { color: var(--accent-color); margin-bottom: 1rem; }
 .opportunities-text { font-size: 1.15rem; line-height: 1.7; color: var(--text-primary); }
 .opportunities-text a { color: var(--accent-color); font-weight: 600; text-decoration: underline; }
