@@ -1,0 +1,591 @@
+{
+  "last_checked": null,
+  "last_sources": [],
+  "scholar_metrics": null,
+  "publications": [
+    {
+      "title": "Microstructural Evolution and Mechanical Behavior of Magnetically Impelled Arc Butt Welded Dissimilar Joints of Super304H and T91 Steel Pipes",
+      "authors": "Sahadevan, A., Ilangovan, R. K., Koundinya N T B N, Amirthalingam, M., Janaki Ram, G. D., and Kottada, R. S.",
+      "venue": "Journal of Materials Engineering and Performance",
+      "details": "35(12), 11852-11866",
+      "year": 2026,
+      "doi": "10.1007/s11665-025-12331-x",
+      "url": "https://doi.org/10.1007/s11665-025-12331-x",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 0,
+      "date": "2026-03"
+    },
+    {
+      "title": "Creep behaviour of additively manufactured nickel-based superalloys: a review",
+      "authors": "Sabari, S. R., Ilangovan, R. K., Koundinya N T B N, Amirthalingam, M., Janaki Ram, G. D., and Kottada, R. S.",
+      "venue": "Journal of Materials Science",
+      "details": "60(39), 18515-18548",
+      "year": 2025,
+      "doi": "10.1007/s10853-025-11359-7",
+      "url": "https://doi.org/10.1007/s10853-025-11359-7",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 1,
+      "date": "2025-10",
+      "locked": true
+    },
+    {
+      "title": "Understanding the early stage (< 10 min) oxidation behaviour of a multi-principal element cobalt base solid solution superalloy at 1000 °C",
+      "authors": "Polimetla, V., Anupam, A., Koundinya N T B N, Ang, A. S. M., Berndt, C. C., and Kottada, R. S.",
+      "venue": "Corrosion Science",
+      "details": "255, 113143",
+      "year": 2025,
+      "doi": "10.1016/j.corsci.2025.113143",
+      "url": "https://doi.org/10.1016/j.corsci.2025.113143",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 2,
+      "date": "2025-10"
+    },
+    {
+      "title": "First report of exploiting processing maps for producing metal foams of AlSiMg alloys",
+      "authors": "Georgy, K., Koundinya N T B N, Neu, T. R., García-Moreno, F., Mukherjee, M., and Kottada, R. S.",
+      "venue": "Journal of Alloys and Compounds",
+      "details": "1038, 182805",
+      "year": 2025,
+      "doi": "10.1016/j.jallcom.2025.182805",
+      "url": "https://doi.org/10.1016/j.jallcom.2025.182805",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 3,
+      "date": "2025-08"
+    },
+    {
+      "title": "Understanding the role of microstructure on creep anisotropy in additively manufactured IN718",
+      "authors": "Sabari, S. R., Koundinya N T B N, Narayana Murty, S. V. S., Nagesha, B. K., Janaki Ram, G. D., and Kottada, R. S.",
+      "venue": "Materials Characterization",
+      "details": "223, 114935",
+      "year": 2025,
+      "doi": "10.1016/j.matchar.2025.114935",
+      "url": "https://doi.org/10.1016/j.matchar.2025.114935",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 4,
+      "date": "2025-05",
+      "locked": true
+    },
+    {
+      "title": "Unravelling the dominant influence of microsegregation on creep rupture behaviour of additively manufactured Inconel 718",
+      "authors": "Sabari, S. R., Koundinya N T B N, Godha, A., Makineni, S. K., Narayana Murty, S. V. S., Nagesha, B. K., Janaki Ram, G. D., and Kottada, R. S.",
+      "venue": "Materials Science and Engineering: A",
+      "details": "919, 147480",
+      "year": 2025,
+      "doi": "10.1016/j.msea.2024.147480",
+      "url": "https://doi.org/10.1016/j.msea.2024.147480",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 5,
+      "date": "2025-01",
+      "locked": true
+    },
+    {
+      "title": "A distinct role of microstructure on hot corrosion behaviour of additively manufactured IN718",
+      "authors": "Mannava, V., Saravanan, T. T., Sabari, S. R., Koundinya N T B N, Venugopal, A., Narayana Murty, S. V. S., Govind, B., Kamaraj, M., and Kottada, R. S.",
+      "venue": "Corrosion Science",
+      "details": "241, 112550",
+      "year": 2024,
+      "doi": "10.1016/j.corsci.2024.112550",
+      "url": "https://doi.org/10.1016/j.corsci.2024.112550",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 6,
+      "date": "2024-12",
+      "locked": true
+    },
+    {
+      "title": "Influence of powder surface chemistry on the defect formation in AlSi10Mg alloy processed via laser powder bed fusion additive manufacturing",
+      "authors": "Ilangovan, R. K., Koundinya N T B N, Krishnaswamy, H., Saravana Kumar, G., Amirthalingam, M., and Kottada, R. S.",
+      "venue": "Materialia",
+      "details": "34, 102102",
+      "year": 2024,
+      "doi": "10.1016/j.mtla.2024.102102",
+      "url": "https://doi.org/10.1016/j.mtla.2024.102102",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 7,
+      "date": "2024-05"
+    },
+    {
+      "title": "Understanding the sigmoidal primary creep behaviour in a multi-component solid-solution Co-base alloy between 700 – 850 °C",
+      "authors": "Karnati, A. K., Koundinya N T B N, Majila, A. N., Chandru, F. D., and Kottada, R. S.",
+      "venue": "Materialia",
+      "details": "34, 102098",
+      "year": 2024,
+      "doi": "10.1016/j.mtla.2024.102098",
+      "url": "https://doi.org/10.1016/j.mtla.2024.102098",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 8,
+      "date": "2024-05"
+    },
+    {
+      "title": "On the substructure evolution and its distinct role on dynamic strain aging in a multi-component cobalt base alloy at intermediate temperatures (300 to 700 °C)",
+      "authors": "Karnati, A. K., Koundinya N T B N, Majila, A. N., Chandru, F. D., and Kottada, R. S.",
+      "venue": "Scripta Materialia",
+      "details": "234, 115583",
+      "year": 2023,
+      "doi": "10.1016/j.scriptamat.2023.115583",
+      "url": "https://doi.org/10.1016/j.scriptamat.2023.115583",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 9,
+      "date": "2023-09"
+    },
+    {
+      "title": "Assessment of the post-dynamic recrystallization effects on the overall dynamic recrystallization kinetics in a Ni-base superalloy",
+      "authors": "Koundinya N T B N, Karnati, A. K., Sahadevan, A., Narayana Murty, S. V. S., and Kottada, R. S.",
+      "venue": "Journal of Alloys and Compounds",
+      "details": "930, 167412",
+      "year": 2023,
+      "doi": "10.1016/j.jallcom.2022.167412",
+      "url": "https://doi.org/10.1016/j.jallcom.2022.167412",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 10,
+      "date": "2023-01",
+      "locked": true
+    },
+    {
+      "title": "Unusual substructure evolution and post-dynamic recrystallization effects on flow softening mechanism in a γ′-free Co-base superalloy",
+      "authors": "Karnati, A. K., Koundinya N T B N, Majila, A. N., Chandru, F. D., and Kottada, R. S.",
+      "venue": "Materialia",
+      "details": "24, 101467",
+      "year": 2022,
+      "doi": "10.1016/j.mtla.2022.101467",
+      "url": "https://doi.org/10.1016/j.mtla.2022.101467",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 11,
+      "date": "2022-08",
+      "locked": true
+    },
+    {
+      "title": "Hot corrosion-creep interaction in IN718 under simulated marine environment: Introducing strain-associated-time (SAT) plots for comprehensive understanding",
+      "authors": "Mannava, V. R., Koundinya N T B N, SambasivaRao, A., Paulose, N., Kamaraj, M., and Kottada, R. S.",
+      "venue": "Corrosion Science",
+      "details": "190, 109667",
+      "year": 2021,
+      "doi": "10.1016/j.corsci.2021.109667",
+      "url": "https://doi.org/10.1016/j.corsci.2021.109667",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 12,
+      "date": "2021-09"
+    },
+    {
+      "title": "Synergetic influence of microconstituents on the damage accumulation and consequent effect on the flow behaviour in cast Mg–Ca–Sn alloys",
+      "authors": "Koundinya N T B N and Kottada, R. S.",
+      "venue": "Materials Science and Engineering: A",
+      "details": "799, 140167",
+      "year": 2021,
+      "doi": "10.1016/j.msea.2020.140167",
+      "url": "https://doi.org/10.1016/j.msea.2020.140167",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 13,
+      "date": "2021-01"
+    },
+    {
+      "title": "Theoretical and experimental studies on thermal stability of nanocrystalline Mg–Mo alloy",
+      "authors": "Rai, N., Samantaray, B. K., Rajulapati, K. V., Ravi, R., Bakshi, S. R., Koundinya N T B N, Kottada, R. S., and Gollapudi, S.",
+      "venue": "Materialia",
+      "details": "14, 100933",
+      "year": 2020,
+      "doi": "10.1016/j.mtla.2020.100933",
+      "url": "https://doi.org/10.1016/j.mtla.2020.100933",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 14,
+      "date": "2020-12"
+    },
+    {
+      "title": "Constitutive Modelling of Hot Deformation Behaviour of Nitrogen Alloyed Martensitic Stainless Steel",
+      "authors": "Krishna, S. C., Anoop, S., Koundinya N T B N, Karthick, N. K., Muneshwar, P., and Pant, B.",
+      "venue": "Transactions of the Indian National Academy of Engineering",
+      "details": "5(4), 769-777",
+      "year": 2020,
+      "doi": "10.1007/s41403-020-00182-y",
+      "url": "https://doi.org/10.1007/s41403-020-00182-y",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 15,
+      "date": "2020-12"
+    },
+    {
+      "title": "Exploring the Safe Hot Working Regime of Creep-Resistant Mg-3Ca-2Sn-1Al Alloy",
+      "authors": "Koundinya N T B N, Rangan, K., Narayana Murty, S. V. S., and Kottada, R. S.",
+      "venue": "Materials Performance and Characterization",
+      "details": "9(2), 215-223",
+      "year": 2020,
+      "doi": "10.1520/mpc20190204",
+      "url": "https://doi.org/10.1520/mpc20190204",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 16,
+      "date": "2020-07-27",
+      "locked": true
+    },
+    {
+      "title": "Understanding the Hot Working Behavior of a Ni-Base Superalloy XH 67 via Processing Map Approach",
+      "authors": "Koundinya N T B N, Sri Bharadwaj, K., Nandha Kumar, E., Narayana Murty, S. V. S., and Kottada, R. S.",
+      "venue": "Materials Performance and Characterization",
+      "details": "9(2), 224-236",
+      "year": 2020,
+      "doi": "10.1520/mpc20190110",
+      "url": "https://doi.org/10.1520/mpc20190110",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 17,
+      "date": "2020-07-27"
+    },
+    {
+      "title": "Distinct role of eutectic morphology on the plastic flow in cast Mg–3Ca alloy",
+      "authors": "Koundinya N T B N and Kottada, R. S.",
+      "venue": "Materials Science and Engineering: A",
+      "details": "791, 139633",
+      "year": 2020,
+      "doi": "10.1016/j.msea.2020.139633",
+      "url": "https://doi.org/10.1016/j.msea.2020.139633",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 18,
+      "date": "2020-07"
+    },
+    {
+      "title": "Synthesis and mechanical properties of TiCx and Ti(C,N) reinforced Titanium matrix in situ composites by reactive spark plasma sintering",
+      "authors": "Vasanthakumar, K., Ghosh, S., Koundinya N T B N, Ramaprabhu, S., and Bakshi, S. R.",
+      "venue": "Materials Science and Engineering: A",
+      "details": "759, 30-39",
+      "year": 2019,
+      "doi": "10.1016/j.msea.2019.05.021",
+      "url": "https://doi.org/10.1016/j.msea.2019.05.021",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 19,
+      "date": "2019-06"
+    },
+    {
+      "title": "On the role of Al and Zn addition on eutectic morphology in Mg-3Ca-2Sn cast alloy",
+      "authors": "Koundinya N T B N and Kottada, R. S.",
+      "venue": "Scripta Materialia",
+      "details": "162, 432-436",
+      "year": 2019,
+      "doi": "10.1016/j.scriptamat.2018.12.011",
+      "url": "https://doi.org/10.1016/j.scriptamat.2018.12.011",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 20,
+      "date": "2019-03"
+    },
+    {
+      "title": "Achieving exceptional creep resistance in rare-earth-free Mg-base alloys by engineering the shape, size and fraction of eutectic, particles and precipitates",
+      "authors": "Koundinya N T B N and Kottada, R. S.",
+      "venue": "Scripta Materialia",
+      "details": "162, 121-126",
+      "year": 2019,
+      "doi": "10.1016/j.scriptamat.2018.10.046",
+      "url": "https://doi.org/10.1016/j.scriptamat.2018.10.046",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 21,
+      "date": "2019-03"
+    },
+    {
+      "title": "Hot deformation behaviour of Mg-3Al-3Sn and Mg-3Al-3Sn-1Zn Alloys: Role of Zn",
+      "authors": "Koundinya N T B N, Raman, L., Nandha Kumar, E., Chawake, N., and Kottada, R. S.",
+      "venue": "Materialia",
+      "details": "3, 274-287",
+      "year": 2018,
+      "doi": "10.1016/j.mtla.2018.09.001",
+      "url": "https://doi.org/10.1016/j.mtla.2018.09.001",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 22,
+      "date": "2018-11",
+      "locked": true
+    },
+    {
+      "title": "A simple and versatile machine for creep testing at low loads (6–300 N) and on miniaturized specimens: Application to a Mg-base alloy",
+      "authors": "Koundinya N T B N, Nandha Kumar, E., Chawake, N., Korla, R., and Kottada, R. S.",
+      "venue": "Review of Scientific Instruments",
+      "details": "89(10), 105102",
+      "year": 2018,
+      "doi": "10.1063/1.5040841",
+      "url": "https://doi.org/10.1063/1.5040841",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 23,
+      "date": "2018-10-01"
+    },
+    {
+      "title": "Verification of correlation between densification during spark plasma sintering and compressive creep of ultrafine-grained in-situ Al2O3-reinforced B2 aluminide matrix composites",
+      "authors": "Chawake, N., Koundinya N T B N, and Kottada, R. S.",
+      "venue": "Journal of Alloys and Compounds",
+      "details": "735, 1921-1930",
+      "year": 2018,
+      "doi": "10.1016/j.jallcom.2017.11.313",
+      "url": "https://doi.org/10.1016/j.jallcom.2017.11.313",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 24,
+      "date": "2018-02"
+    },
+    {
+      "title": "Optimization of Hot Workability and Control of Microstructure in CF250 Grade Cobalt-Free Maraging Steel: An Approach Using Processing Maps",
+      "authors": "Chakravarthi, K. V. A., Koundinya N T B N, Narayana Murty, S. V. S., Sivakumar, D., and Nageswara Rao, B.",
+      "venue": "Metallography, Microstructure, and Analysis",
+      "details": "7(1), 35-47",
+      "year": 2018,
+      "doi": "10.1007/s13632-017-0408-z",
+      "url": "https://doi.org/10.1007/s13632-017-0408-z",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 25,
+      "date": "2018-02"
+    },
+    {
+      "title": "Microstructure, properties and hot workability of M300 grade maraging steel",
+      "authors": "Chakravarthi, K. V. A., Koundinya N T B N, Narayana Murty, S. V. S., and Nageswara Rao, B.",
+      "venue": "Defence Technology",
+      "details": "14(1), 51-58",
+      "year": 2018,
+      "doi": "10.1016/j.dt.2017.09.001",
+      "url": "https://doi.org/10.1016/j.dt.2017.09.001",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 26,
+      "date": "2018-02"
+    },
+    {
+      "title": "Optimization of Hot Workability and Control of Microstructure in 18Ni (M250 Grade) Maraging Steel Using Processing Maps",
+      "authors": "Chakravarthi, K. V. A., Koundinya N T B N, Sarkar, A., Narayana Murty, S. V. S., and Nageswara Rao, B.",
+      "venue": "Materials Performance and Characterization",
+      "details": "7(1), 547-561",
+      "year": 2018,
+      "doi": "10.1520/mpc20180082",
+      "url": "https://doi.org/10.1520/mpc20180082",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 27,
+      "date": "2018-01-01"
+    },
+    {
+      "title": "Microstructural Evolution and Constitutive Relationship of M350 Grade Maraging Steel During Hot Deformation",
+      "authors": "Chakravarthi, K. V. A., Koundinya N T B N, Narayana Murty, S. V. S., and Nageswara Rao, B.",
+      "venue": "Journal of Materials Engineering and Performance",
+      "details": "26(3), 1174-1185",
+      "year": 2017,
+      "doi": "10.1007/s11665-017-2539-4",
+      "url": "https://doi.org/10.1007/s11665-017-2539-4",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 28,
+      "date": "2017-03"
+    },
+    {
+      "title": "Evolution of morphology and texture during high energy ball milling of Ni and Ni-5 wt%Cu powders",
+      "authors": "Chawake, N., Varanasi, R. S., Jaswanth, B., Pinto, L., Kashyap, S., Koundinya N T B N, Srivastav, A. K., Jain, A., Sundararaman, M., and Kottada, R. S.",
+      "venue": "Materials Characterization",
+      "details": "120, 90-96",
+      "year": 2016,
+      "doi": "10.1016/j.matchar.2016.08.019",
+      "url": "https://doi.org/10.1016/j.matchar.2016.08.019",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 29,
+      "date": "2016-10"
+    },
+    {
+      "title": "Formation of amorphous alumina during sintering of nanocrystalline B2 aluminides",
+      "authors": "Chawake, N., Koundinya N T B N, Kashyap, S., Srivastav, A. K., Yadav, D., Mondal, R. A., and Kottada, R. S.",
+      "venue": "Materials Characterization",
+      "details": "119, 186-194",
+      "year": 2016,
+      "doi": "10.1016/j.matchar.2016.08.004",
+      "url": "https://doi.org/10.1016/j.matchar.2016.08.004",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 30,
+      "date": "2016-09"
+    },
+    {
+      "title": "On correlation between densification kinetics during spark plasma sintering and compressive creep of B2 aluminides",
+      "authors": "Chawake, N., Koundinya N T B N, Srivastav, A. K., and Kottada, R. S.",
+      "venue": "Scripta Materialia",
+      "details": "107, 63-66",
+      "year": 2015,
+      "doi": "10.1016/j.scriptamat.2015.05.021",
+      "url": "https://doi.org/10.1016/j.scriptamat.2015.05.021",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 31,
+      "date": "2015-10"
+    },
+    {
+      "title": "Thermal analysis and nanoindentation studies on nanocrystalline AlCrNiFeZn high entropy alloy",
+      "authors": "Babu, C. S., Koundinya N T B N, Sivaprasad, K., & Szpunar, J. A.",
+      "venue": "Procedia Materials Science",
+      "details": "",
+      "year": 2014,
+      "doi": null,
+      "url": null,
+      "type": "conference",
+      "sources": [
+        "site"
+      ],
+      "added": "2026-10-18",
+      "order": 32
+    },
+    {
+      "title": "Phase Evolution and Thermal Analysis of Nanocrystalline AlCrCuFeNiZn High Entropy Alloy Produced by Mechanical Alloying",
+      "authors": "Koundinya N T B N, Sajith Babu, C., Sivaprasad, K., Susila, P., Kishore Babu, N., and Baburao, J.",
+      "venue": "Journal of Materials Engineering and Performance",
+      "details": "22(10), 3077-3084",
+      "year": 2013,
+      "doi": "10.1007/s11665-013-0580-5",
+      "url": "https://doi.org/10.1007/s11665-013-0580-5",
+      "type": "journal",
+      "sources": [
+        "site",
+        "crossref"
+      ],
+      "added": "2026-10-18",
+      "order": 33,
+      "date": "2013-10"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+name: Update publications
+
+# Runs every Monday at 08:47 IST (03:17 UTC), and on demand from the Actions tab.
+on:
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+    inputs:
+      refresh_metadata:
+        description: "Also refresh journal, volume and author details from Crossref for existing papers"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: update-publications
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch Google Scholar and ORCID, update the list
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: |
+          if [ "${{ inputs.refresh_metadata }}" = "true" ]; then
+            python scripts/update_publications.py --refresh-metadata
+          else
+            python scripts/update_publications.py
+          fi
+
+      - name: Commit changes
+        id: commit
+        run: |
+          git add data/publications.json publications.html index.html covers
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update publications from Google Scholar and ORCID"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Rebuild the GitHub Pages site
+        if: steps.commit.outputs.changed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"

@@ -1,0 +1,20 @@
+{
+  "_help": "Settings for scripts/update_publications.py. Edit 'selected' to choose the papers on the Selected tab (by DOI, in display order). Add DOIs or titles under 'exclude' to hide papers that Google Scholar wrongly attributes to you.",
+  "scholar_user_id": "3LdcUVcAAAAJ",
+  "orcid": "0000-0003-4824-6993",
+  "author_display": "Koundinya N T B N",
+  "selected": [
+    "10.1016/j.scriptamat.2018.10.046",
+    "10.1016/j.scriptamat.2018.12.011",
+    "10.1063/1.5040841",
+    "10.1016/j.jallcom.2022.167412",
+    "10.1016/j.msea.2020.139633",
+    "10.1016/j.msea.2024.147480",
+    "10.1016/j.mtla.2024.102098",
+    "10.1016/j.scriptamat.2023.115583"
+  ],
+  "exclude": {
+    "dois": [],
+    "titles": []
+  }
+}

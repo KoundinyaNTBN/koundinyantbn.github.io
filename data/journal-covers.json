@@ -1,0 +1,122 @@
+{
+  "_help": "Journal covers shown beside each paper. 'match' is compared with the journal name (case-insensitive). 'cover' is an image URL or a file in this repository, e.g. covers/rsi.jpg. Without a cover, 'label' and 'color' draw a simple tile instead.",
+  "journals": [
+    {
+      "match": "Scripta Materialia",
+      "cover": "https://ars.els-cdn.com/content/image/X13596462.jpg"
+    },
+    {
+      "match": "Acta Materialia",
+      "cover": "https://ars.els-cdn.com/content/image/X13596454.jpg"
+    },
+    {
+      "match": "Materials Science and Engineering: A",
+      "cover": "https://ars.els-cdn.com/content/image/X09215093.jpg"
+    },
+    {
+      "match": "Journal of Alloys and Compounds",
+      "cover": "https://ars.els-cdn.com/content/image/X09258388.jpg"
+    },
+    {
+      "match": "Materialia",
+      "cover": "https://ars.els-cdn.com/content/image/X25891529.jpg"
+    },
+    {
+      "match": "Corrosion Science",
+      "cover": "https://ars.els-cdn.com/content/image/X0010938X.jpg"
+    },
+    {
+      "match": "Materials Characterization",
+      "cover": "https://ars.els-cdn.com/content/image/X10445803.jpg"
+    },
+    {
+      "match": "Defence Technology",
+      "cover": "https://ars.els-cdn.com/content/image/X22149147.jpg"
+    },
+    {
+      "match": "Procedia Materials Science",
+      "cover": "https://ars.els-cdn.com/content/image/X22118128.jpg"
+    },
+    {
+      "match": "Materials & Design",
+      "cover": "https://ars.els-cdn.com/content/image/X02641275.jpg"
+    },
+    {
+      "match": "Materials and Design",
+      "cover": "https://ars.els-cdn.com/content/image/X02641275.jpg"
+    },
+    {
+      "match": "International Journal of Plasticity",
+      "cover": "https://ars.els-cdn.com/content/image/X07496419.jpg"
+    },
+    {
+      "match": "Journal of Materials Research and Technology",
+      "cover": "https://ars.els-cdn.com/content/image/X22387854.jpg"
+    },
+    {
+      "match": "Intermetallics",
+      "cover": "https://ars.els-cdn.com/content/image/X09669795.jpg"
+    },
+    {
+      "match": "Materials Today Communications",
+      "cover": "https://ars.els-cdn.com/content/image/X23524928.jpg"
+    },
+    {
+      "match": "Journal of Materials Processing Technology",
+      "cover": "https://ars.els-cdn.com/content/image/X09240136.jpg"
+    },
+    {
+      "match": "Additive Manufacturing",
+      "cover": "https://ars.els-cdn.com/content/image/X22148604.jpg"
+    },
+    {
+      "match": "Materials Letters",
+      "cover": "https://ars.els-cdn.com/content/image/X0167577X.jpg"
+    },
+    {
+      "match": "Journal of Nuclear Materials",
+      "cover": "https://ars.els-cdn.com/content/image/X00223115.jpg"
+    },
+    {
+      "match": "International Journal of Fatigue",
+      "cover": "https://ars.els-cdn.com/content/image/X01421123.jpg"
+    },
+    {
+      "match": "Journal of Materials Engineering and Performance",
+      "cover": "https://media.springernature.com/w153/springer-static/cover/journal/11665.jpg"
+    },
+    {
+      "match": "Journal of Materials Science",
+      "cover": "https://media.springernature.com/w153/springer-static/cover/journal/10853.jpg"
+    },
+    {
+      "match": "Transactions of the Indian National Academy of Engineering",
+      "cover": "https://media.springernature.com/w153/springer-static/cover/journal/41403.jpg"
+    },
+    {
+      "match": "Metallography, Microstructure, and Analysis",
+      "cover": "https://media.springernature.com/w153/springer-static/cover/journal/13632.jpg"
+    },
+    {
+      "match": "Metallurgical and Materials Transactions A",
+      "cover": "https://media.springernature.com/w153/springer-static/cover/journal/11661.jpg"
+    },
+    {
+      "match": "JOM",
+      "cover": "https://media.springernature.com/w153/springer-static/cover/journal/11837.jpg"
+    },
+    {
+      "match": "Review of Scientific Instruments",
+      "cover": "https://aipp.silverchair-cdn.com/aipp/content_public/journal/rsi/issue/97/9/1/m_rsi.2026.97.issue-9.largecover.jpeg?Expires=1795505006&Signature=AEV3mgAHO6r72sjsp2doRXY3BxNfhhcbubY40IIquyTi8MfY9iIABvz77NypEyC2geYJDaENP8iX8ecqH42E3YCmvlLfPFveQ14LsBIgrzSHB3QZxPmM5weSmajyKLeqZpcc2RbhIJFQi0RokRR921bWCbn6f-UVxGfff-kDQk8cmqDfBIr3-vKdGqZ6w4fSnO5HW1pAVOmHje5ibG6DAFlj37nCjz4aVfpQj6HLyKpG9QEYeDun-JZNkIao9BLBuH2wJsnPZdfLYz0Mxw1QALBymndtAMH4DbKYNNoEqHjqeZRIXxVCbhi9qXQQcmFIJkw5XsOGsN3VASh4plxk1Q__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA",
+      "label": "Rev. Sci. Instrum.",
+      "color": "#1d4f91",
+      "note": "AIP issue cover, Vol. 97 Issue 9 (2026). The link expires in Nov 2026; the weekly update saves a copy in covers/ before then."
+    },
+    {
+      "match": "Materials Performance and Characterization",
+      "cover": "https://store.astm.org/media/catalog/product/m/p/mpc-web_1_2.jpg",
+      "label": "Mater. Perform. Charact.",
+      "color": "#0f5f73"
+    }
+  ]
+}

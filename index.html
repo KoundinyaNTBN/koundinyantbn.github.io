@@ -3,22 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <meta name="google-site-verification" content="J5EvpoeZab51OSTjtVoOOjNPheljstuF8GPPb3CW3uI" />
-  
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- Updated CSP to allow SN Pro to load from Google Fonts via your CSS -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://fonts.gstatic.com data: *; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; img-src 'self' data: *; script-src 'self' 'unsafe-inline';">
-  
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://fonts.gstatic.com data:; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; img-src 'self' data: *; script-src 'self' 'unsafe-inline';">
   <link rel="canonical" href="https://koundinyantbn.github.io/">
-
   <title>Koundinya N T B N | SAFEE Group | IIT Kharagpur</title>
   <meta name="description" content="SAFEE Group led by Dr. Koundinya N T B N at the Department of Metallurgical and Materials Engineering, IIT Kharagpur. Research on Sustainable Alloys for Extreme Environments.">
   <meta name="keywords" content="Koundinya N T B N, Creep, SAFEE Group, IIT Kharagpur, Metallurgical and Materials Engineering, Electron Microscopy, Sustainable Alloys, High Temperature Materials, Extreme Environments, IIT Madras, IIT Jodhpur">
-
-  <!-- The SN Pro font is now imported directly inside style.css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SN+Pro:wght@300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -62,53 +57,95 @@
   }
   </script>
 </head>
-<body class="page-index">
+<body class="page-home">
 
-<nav>
-  <a class="nav-brand" href="index.html">
-    <div class="nav-logo">S</div>
-    <div class="nav-brand-text">SAFEE Group</div>
-  </a>
-  <div style="display:flex; align-items:center;">
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="group.html">Group</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="teaching.html">Teaching</a></li>
-      <li><a href="opportunities.html">Join Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="menu-toggle" id="mobile-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
+<canvas id="lattice" aria-hidden="true"></canvas>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-logo">S</span>
+      <span class="brand-text">
+        <span class="brand-top"><span class="brand-name">SAFEE Group</span><span class="brand-chip">IIT Kharagpur</span></span>
+        <span class="brand-sub">Sustainable Alloys for Extreme Environments</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="group.html">Group</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-cta"><a class="btn btn-primary" href="opportunities.html">Join Us</a></li>
+      </ul>
+      <button class="menu-toggle" id="mobile-menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </nav>
   </div>
-</nav>
+</header>
 
 <main>
-  <div class="content-wrap hero-welcome">
-    <div class="hero-acronym">S · A · F · E · E</div>
-    <h1 class="hero-title">Sustainable Alloys for<br>Extreme Environments</h1>
-    
-    <p class="hero-subtitle">
-      Department of Metallurgical and Materials Engineering <br> 
-      Indian Institute of Technology Kharagpur
-    </p>
-
-    <br/>
-  
-    <blockquote class="hero-quote">
-      "To us, sustainability is not a buzzword; it is our responsibility to develop cost-effective, long-lasting, and impurity-tolerant alloys that endure extreme environments and serve the nation."
-    </blockquote>
-  </div>
+  <div class="ribbon">Now recruiting PhD students and postdocs. <a class="chev" href="opportunities.html">Learn more</a></div>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Department of Metallurgical and Materials Engineering &middot; IIT Kharagpur</p>
+      <p class="hero-acronym">SAFEE</p>
+      <h1>Sustainable Alloys for <span class="grad">Extreme Environments</span></h1>
+      <p class="hero-quote">&ldquo;To us, sustainability is not a buzzword; it is our responsibility to develop cost-effective, long-lasting, and impurity-tolerant alloys that endure extreme environments and serve the nation.&rdquo;</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="research.html">Explore Research</a>
+        <a class="chev" href="opportunities.html">Join us</a>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer>
-  <div>© 2026 SAFEE Group | Koundinya N T B N</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-logo">S</span>
+          <span class="brand-text"><span class="brand-name">SAFEE Group</span><span class="brand-sub">Sustainable Alloys for Extreme Environments</span></span>
+        </a>
+        <p>Department of Metallurgical and Materials Engineering, Indian Institute of Technology Kharagpur.</p>
+      </div>
+      <div>
+        <h3>Navigate</h3>
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="group.html">Group</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="opportunities.html">Join Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <address>
+          #326, Metallurgical and Materials Engineering (MME)<br>
+          Indian Institute of Technology Kharagpur<br>
+          Kharagpur 721302, West Bengal, India<br>
+          <a href="mailto:koundinya@metal.iitkgp.ac.in">koundinya (at) metal.iitkgp.ac.in</a>
+        </address>
+      </div>
+      <div>
+        <h3>Profiles</h3>
+        <ul>
+          <li><a href="https://scholar.google.com/citations?user=3LdcUVcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+          <li><a href="https://orcid.org/0000-0003-4824-6993" target="_blank" rel="noopener noreferrer">ORCID</a></li>
+          <li><a href="https://www.linkedin.com/in/koundinya-n-t-b-n-60a692242/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/KoundinyaNTBN" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot-base"><div class="wrap">&copy; 2026 SAFEE Group | Koundinya N T B N</div></div>
 </footer>
 
 <script src="script.js"></script>
+<script src="lattice.js"></script>
 </body>
 </html>
