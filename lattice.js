@@ -1,21 +1,20 @@
 /*
- * SAFEE background: Nabarro–Herring creep in a small tensile specimen under your cursor
+ * SAFEE background: Nabarro–Herring creep in a small cuboidal compression specimen under your cursor
  *
  * The background is a close-packed {111} plane of the nickel-base FCC lattice.
  * Empty sites are vacancies. The lattice is only visible in a soft spotlight around
  * the cursor; the rest of the page stays a plain colour.
  *
- * Under the cursor a small dog-bone tensile specimen is drawn, held at turbine-blade
- * conditions for the single-crystal superalloy CMSX-4: 1100 °C (1373 K) with 120 MPa
- * tension along its axis.
+ * Under the cursor a small cuboidal specimen sits between two compression platens, held
+ * at turbine-blade conditions for the single-crystal superalloy CMSX-4: 1100 °C (1373 K)
+ * with 120 MPa compression along the vertical axis.
  *
  *  Temperature  In the gauge section, vacancies exchange with neighbouring atoms at an
  *               Arrhenius rate, Γ = Γ0 · exp(−Em / kT).
- *  Stress       Tension raises the vacancy concentration at the faces normal to the
- *               load by exp(σΩ/kT). The loaded ends of the gauge emit vacancies, which
- *               drift to the free sides and are absorbed there. Atoms move the other
- *               way, so the gauge lengthens and narrows: Nabarro–Herring creep.
- *               The creep strain ε is shown under the specimen.
+ *  Stress       Compression lowers the vacancy concentration at the loaded faces by
+ *               exp(−σΩ/kT). The free side faces emit vacancies, which drift to the
+ *               loaded top and bottom faces and are absorbed there. Atoms move the other
+ *               way, so the cuboid shortens and widens: Nabarro–Herring creep.
  *
  * Each atom that jumps into a vacancy turns blue and fades back, so the blue atoms
  * mark the vacancy paths. Rates, the number of vacancies, the stress bias and the
@@ -31,21 +30,19 @@
 
   /* ---------- conditions ---------- */
   var T_HOT = 1373;          // K, 1100 °C inside the grain
-  var SIGMA = 120;           // MPa, tension along the horizontal
-  var T_LABEL = 'T = 1100 °C';
-  var S_LABEL = 'σ = 120 MPa';
+  var SIGMA = 120;           // MPa, compression along the vertical
   var K_B = 1.380649e-23;    // J/K
   var OMEGA = 1.094e-29;     // m³, atomic volume of nickel
   var GAMMA_HOT = 4;         // jumps per second per vacancy inside the hot grain
   var STRESS_GAIN = 8;       // the stress bias σΩ/kT is magnified this many times on screen
   var VAC_FRACTION = 0.03;   // empty sites in the cold background (display value)
-  var GRAIN_VACANCIES = 3;   // vacancies kept inside the gauge by the loaded ends
+  var GRAIN_VACANCIES = 3;   // vacancies kept inside the cuboid by the free side faces
   var CREEP_RATE = 0.04;     // creep strain per second while the cursor rests (display value)
-  var MAX_STRAIN = 0.45;
+  var MAX_STRAIN = 0.4;
   var TAIL_JUMPS = 3;        // a vacancy's blue trail is about this many atoms long
   var HOP_TIME = 0.18;
   var TWO_PI = Math.PI * 2;
-  var SPOT_IN = 5.0, SPOT_OUT = 7.2;  // spotlight radii, in units of G
+  var SPOT_IN = 2.0, SPOT_OUT = 3.0;  // spotlight radii, in units of G
   var BIAS = STRESS_GAIN * (SIGMA * 1e6 * OMEGA) / (K_B * T_HOT);
 
   /* ---------- colours ---------- */
@@ -73,21 +70,21 @@
   var heat = 0;   // 0..1, rises when the cursor arrives and falls when it leaves
 
   function baseX(i, j) { return (i - M) * a + rowStag[j]; }
-  // Tensile specimen (dog-bone). The gauge section is where diffusion happens; under creep
-  // it lengthens and narrows (area conserved), while the grips keep their size.
-  function halfW() { return 1.5 * G * (1 + grain.strain); }        // half gauge length
-  function halfH() { return 0.3 * G / (1 + grain.strain); }        // half gauge width
-  function filletLen() { return 0.55 * G; }
-  function gripHalfW() { return 1.0 * G; }
-  function gripLen() { return 0.95 * G; }
-  function specimenHalfLen(strain) { return 1.5 * G * (1 + strain) + filletLen() + gripLen(); }
+  // Cuboidal compression specimen (height:width = 1.5). Under creep it shortens along the
+  // load and widens (area conserved). Platens press on the top and bottom faces.
+  var H0 = 1.2, W0 = 0.8;                                           // half height and width, in G
+  function halfW() { return W0 * G * (1 + grain.strain); }          // half width (free sides)
+  function halfH() { return H0 * G / (1 + grain.strain); }          // half height (loaded faces)
+  function platenHalf() { return halfW() + 0.45 * G; }
+  var PLATEN_T = 3;                                                  // platen thickness (px)
+  function loadReach() { return H0 * G + PLATEN_T + 4 + arrowLen(); } // centre to arrow tail
   function inGrain(x, y, pad) {
     pad = pad || 0;
     return Math.abs(x - grain.x) < halfW() - pad && Math.abs(y - grain.y) < halfH() - pad;
   }
-  function arrowLen() { return 46; }
-  function clampX(x) { var m = specimenHalfLen(MAX_STRAIN) + arrowLen() + 26; return Math.max(m, Math.min(W - m, x)); }
-  function clampY(y) { var top = 72 + gripHalfW() + 22; return Math.max(top, Math.min(H - gripHalfW() - 30, y)); }
+  function arrowLen() { return 18; }
+  function clampX(x) { var m = W0 * G * (1 + MAX_STRAIN) + 0.45 * G + 16; return Math.max(m, Math.min(W - m, x)); }
+  function clampY(y) { var top = 60 + loadReach() + 6; return Math.max(top, Math.min(H - loadReach() - 10, y)); }
   // 1 well inside the grain, falling to 0 just outside its boundary
   function hotness(x, y) {
     if (heat <= 0.002) return 0;
@@ -144,7 +141,7 @@
     if (i < 0 || i >= nCols) return null;
     return [i, j];
   }
-  // A loaded face emits a vacancy: an atom just inside the left or right face leaves.
+  // A free side face emits a vacancy: an atom just inside the left or right face leaves.
   // To keep the overall count steady, a vacancy far from the grain is filled at the same time.
   function emitAt(v) {
     for (var t = 0; t < 12; t++) {
@@ -203,11 +200,11 @@
       for (var k = 0; k < vac.length; k++) {
         var vx = baseX(vac[k].i, vac[k].j), vy = rowY[vac[k].j];
         if (inGrain(vx, vy)) { inside.push(vac[k]); continue; }
-        // vacancies left just outside the narrowing gauge are absorbed by its free surface
+        // vacancies left just outside the shortening cuboid are absorbed at the platens
         if (Math.abs(vx - grain.x) < halfW() && Math.abs(vy - grain.y) < halfH() + 1.6 * a) { relocateFar(vac[k]); continue; }
         outside.push(vac[k]);
       }
-      // the loaded faces keep the grain supplied with vacancies
+      // the free side faces keep the cuboid supplied with vacancies
       if (inside.length < GRAIN_VACANCIES && outside.length && Math.random() < 6 * dt) {
         var far = outside[Math.floor(Math.random() * outside.length)];
         if (emitAt(far)) inside.push(far);
@@ -219,14 +216,14 @@
         var x = baseX(v.i, v.j), y = rowY[v.j];
         if (Math.random() >= rate * dt) continue;
 
-        // drift in from the loaded faces, out towards the free faces
+        // drift in from the free side faces, out towards the loaded faces
         var fx = -(x - grain.x) / halfW(), fy = (y - grain.y) / halfH();
         var nb = neighbours(v.i, v.j), cand = [], wsum = 0;
         for (var q = 0; q < nb.length; q++) {
           var idx = site[nb[q][1]][nb[q][0]];
           if (idx < 0 || atoms[idx].t < 1) continue;
           var nx = baseX(nb[q][0], nb[q][1]), ny = rowY[nb[q][1]];
-          if (Math.abs(nx - grain.x) >= halfW()) continue;     // no escape through the loaded faces
+          if (Math.abs(nx - grain.x) >= halfW()) continue;     // no escape back through the side faces
           var w = Math.exp(BIAS * ((nx - x) * fx + (ny - y) * fy) / a);
           cand.push([nb[q][0], nb[q][1], w]); wsum += w;
         }
@@ -242,7 +239,7 @@
         site[v.j][v.i] = ai; site[c[1]][c[0]] = -1;
         v.i = c[0]; v.j = c[1];
 
-        // reaching a free face, the vacancy is absorbed; a loaded face emits a new one
+        // reaching a loaded face, the vacancy is absorbed; a side face emits a new one
         if (Math.abs(rowY[v.j] - grain.y) >= halfH() - 0.3 * a) emitAt(v);
       }
     }
@@ -282,27 +279,7 @@
   }
 
   function specimenPath() {
-    var L = halfW(), Wd = halfH(), RF = filletLen(), WG = gripHalfW(), LG = gripLen();
-    var cx = grain.x, cy = grain.y, E = L + RF + LG, r = Math.min(6, WG * 0.2);
-    ctx.beginPath();
-    ctx.moveTo(cx - E + r, cy - WG);
-    ctx.lineTo(cx - L - RF, cy - WG);
-    ctx.bezierCurveTo(cx - L - RF * 0.45, cy - WG, cx - L - RF * 0.55, cy - Wd, cx - L, cy - Wd);   // shoulder
-    ctx.lineTo(cx + L, cy - Wd);                                                                  // gauge
-    ctx.bezierCurveTo(cx + L + RF * 0.55, cy - Wd, cx + L + RF * 0.45, cy - WG, cx + L + RF, cy - WG);
-    ctx.lineTo(cx + E - r, cy - WG);
-    ctx.quadraticCurveTo(cx + E, cy - WG, cx + E, cy - WG + r);
-    ctx.lineTo(cx + E, cy + WG - r);
-    ctx.quadraticCurveTo(cx + E, cy + WG, cx + E - r, cy + WG);
-    ctx.lineTo(cx + L + RF, cy + WG);
-    ctx.bezierCurveTo(cx + L + RF * 0.45, cy + WG, cx + L + RF * 0.55, cy + Wd, cx + L, cy + Wd);
-    ctx.lineTo(cx - L, cy + Wd);
-    ctx.bezierCurveTo(cx - L - RF * 0.55, cy + Wd, cx - L - RF * 0.45, cy + WG, cx - L - RF, cy + WG);
-    ctx.lineTo(cx - E + r, cy + WG);
-    ctx.quadraticCurveTo(cx - E, cy + WG, cx - E, cy + WG - r);
-    ctx.lineTo(cx - E, cy - WG + r);
-    ctx.quadraticCurveTo(cx - E, cy - WG, cx - E + r, cy - WG);
-    ctx.closePath();
+    roundRect(grain.x - halfW(), grain.y - halfH(), 2 * halfW(), 2 * halfH(), 2);
   }
 
   // under the atoms: a faint warm fill for the temperature
@@ -313,10 +290,10 @@
     ctx.fill();
   }
 
-  // over the atoms: outline, vacancy flux, load arrows and labels
+  // over the atoms: outline, platens, vacancy flux and load arrows
   function drawSpecimenOverlay() {
     if (heat < 0.03) return;
-    var L = halfW(), Wd = halfH(), E = specimenHalfLen(grain.strain), WG = gripHalfW(), al = heat;
+    var L = halfW(), Wd = halfH(), P = platenHalf(), al = heat;
     var cx = grain.x, cy = grain.y;
 
     specimenPath();
@@ -324,54 +301,45 @@
     ctx.strokeStyle = crimson(0.24 * al);
     ctx.stroke();
 
-    // gauge marks at the ends of the gauge section
-    ctx.lineWidth = 1;
-    ctx.strokeStyle = crimson(0.3 * al);
-    ctx.beginPath();
-    ctx.moveTo(cx - L, cy - Wd - 3); ctx.lineTo(cx - L, cy - Wd + 2);
-    ctx.moveTo(cx + L, cy - Wd - 3); ctx.lineTo(cx + L, cy - Wd + 2);
-    ctx.stroke();
+    // compression platens on the top and bottom faces
+    ctx.fillStyle = crimson(0.16 * al);
+    ctx.fillRect(cx - P, cy - Wd - PLATEN_T, 2 * P, PLATEN_T);
+    ctx.fillRect(cx - P, cy + Wd, 2 * P, PLATEN_T);
 
-    // vacancy flux in the gauge: from the loaded ends to the free sides
-    if (Wd >= 8) {
-    ctx.setLineDash([3, 4]);
-    ctx.lineWidth = 1.1;
-    ctx.strokeStyle = ctx.fillStyle = crimson(0.2 * al);
-    for (var sx = -1; sx <= 1; sx += 2) {
-      for (var sy = -1; sy <= 1; sy += 2) {
-        var ax = cx + sx * L * 0.8, ay = cy + sy * Wd * 0.15;
-        var bx2 = cx + sx * L * 0.3, by2 = cy + sy * Wd * 0.78;
-        var qx = cx + sx * L * 0.72, qy = cy + sy * Wd * 0.75;
-        ctx.beginPath(); ctx.moveTo(ax, ay); ctx.quadraticCurveTo(qx, qy, bx2, by2); ctx.stroke();
-        ctx.setLineDash([]);
-        arrowHead(bx2, by2, Math.atan2(by2 - qy, bx2 - qx), 4);
-        ctx.setLineDash([3, 4]);
+    // vacancy flux: from the free side faces to the loaded top and bottom faces
+    if (Math.min(L, Wd) >= 8) {
+      ctx.setLineDash([3, 4]);
+      ctx.lineWidth = 1.1;
+      ctx.strokeStyle = ctx.fillStyle = crimson(0.2 * al);
+      for (var sx = -1; sx <= 1; sx += 2) {
+        for (var sy = -1; sy <= 1; sy += 2) {
+          var ax = cx + sx * L * 0.78, ay = cy + sy * Wd * 0.12;
+          var bx2 = cx + sx * L * 0.2, by2 = cy + sy * Wd * 0.8;
+          var qx = cx + sx * L * 0.72, qy = cy + sy * Wd * 0.72;
+          ctx.beginPath(); ctx.moveTo(ax, ay); ctx.quadraticCurveTo(qx, qy, bx2, by2); ctx.stroke();
+          ctx.setLineDash([]);
+          arrowHead(bx2, by2, Math.atan2(by2 - qy, bx2 - qx), 4);
+          ctx.setLineDash([3, 4]);
+        }
       }
-    }
-    ctx.setLineDash([]);
+      ctx.setLineDash([]);
     }
 
-    // applied load: one arrow on each grip
-    var len = arrowLen();
-    ctx.lineWidth = 1.5;
-    ctx.strokeStyle = ctx.fillStyle = crimson(0.32 * al);
+    // applied load: a short, rounded arrow pressing on each platen
+    var len = arrowLen(), hw = 4.5;
+    ctx.lineWidth = 1.6;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.strokeStyle = crimson(0.34 * al);
     for (var s = -1; s <= 1; s += 2) {
-      var xs = cx + s * (E + 4), xe = xs + s * len;
-      ctx.beginPath(); ctx.moveTo(xs, cy); ctx.lineTo(xe - s * 5, cy); ctx.stroke();
-      arrowHead(xe, cy, s > 0 ? 0 : Math.PI, 6);
+      var tip = cy + s * (Wd + PLATEN_T + 3), tail = tip + s * len;
+      ctx.beginPath();
+      ctx.moveTo(cx, tail); ctx.lineTo(cx, tip);                       // shaft
+      ctx.moveTo(cx - hw, tip + s * hw); ctx.lineTo(cx, tip); ctx.lineTo(cx + hw, tip + s * hw);   // open chevron head
+      ctx.stroke();
     }
-
-    // labels
-    ctx.font = '600 10px "SN Pro", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
-    ctx.fillStyle = crimson(0.4 * al);
-    ctx.textBaseline = 'bottom';
-    ctx.textAlign = 'center';
-    ctx.fillText(T_LABEL, cx, cy - WG - 5);
-    ctx.textAlign = 'left';
-    ctx.fillText(S_LABEL, cx + E + 6, cy - 5);
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'top';
-    ctx.fillText('ε = ' + Math.round(grain.strain * 100) + '%', cx, cy + WG + 5);
+    ctx.lineCap = 'butt';
+    ctx.lineJoin = 'miter';
   }
 
   var lastBox = null;   // only the region around the specimen is redrawn each frame
@@ -381,7 +349,7 @@
     else ctx.clearRect(0, 0, W, H);
     lastBox = null;
     if (heat < 0.01 || !grain.placed) return;   // no cursor: plain background
-    var reach = Math.max(SPOT_OUT * G, specimenHalfLen(grain.strain) + arrowLen() + 70) + 2 * a;
+    var reach = Math.max(SPOT_OUT * G, loadReach() + 20, platenHalf() + 10) + 2 * a;
     lastBox = [Math.floor(grain.x - reach), Math.floor(grain.y - reach), Math.ceil(2 * reach), Math.ceil(2 * reach)];
     ctx.clearRect(lastBox[0], lastBox[1], lastBox[2], lastBox[3]);
     for (var z = 0; z < NBINS; z++) { bx[z].length = 0; by[z].length = 0; }
