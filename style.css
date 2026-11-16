@@ -22,7 +22,7 @@
   --accent-soft: rgba(0, 113, 227, 0.08);
   --ember: #bf4800;
   --slate: #5e5ce6;
-  --max: 980px;                  /* Apple's content width */
+  --max: 1080px;
   --narrow: 760px;
   --gutter: max(22px, env(safe-area-inset-left, 0px));
   --gutter-r: max(22px, env(safe-area-inset-right, 0px));
@@ -199,7 +199,7 @@ address { font-style: normal; color: var(--ink-2); line-height: 1.7; }
 
 /* ─── people ─── */
 .pi { display: grid; gap: clamp(20px, 3.6vw, 44px); align-items: stretch; }
-.pi-fit { grid-template-columns: 230px minmax(0, 1fr); }
+.pi-fit { grid-template-columns: 210px minmax(0, 1fr); }
 .pi-photo { border-radius: 18px; overflow: hidden; background: var(--bg-alt); }
 .pi-fit .pi-photo { height: 100%; min-height: 260px; }
 .pi-photo img { width: 100%; height: 100%; object-fit: cover; }
@@ -219,6 +219,7 @@ address { font-style: normal; color: var(--ink-2); line-height: 1.7; }
 .member img { object-fit: cover; background: var(--bg-alt); }
 .member .avatar { display: grid; place-items: center; font-size: 2.8rem; font-weight: 600; letter-spacing: 0.01em; color: #fff; background: linear-gradient(180deg, #a5a5ad, #85858c); }
 .member > div { display: grid; gap: 3px; }
+.pi-body .eyebrow { color: var(--accent); }
 .member-eyebrow { font-size: 0.875rem; font-weight: 600; color: var(--accent); letter-spacing: -0.005em; }
 .member h3 { font-size: var(--fs-head); letter-spacing: -0.02em; line-height: 1.2; }
 .member-topic { color: var(--ink-2); font-size: var(--fs-small); line-height: 1.35; }
