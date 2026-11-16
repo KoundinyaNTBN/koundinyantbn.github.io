@@ -6,6 +6,23 @@
   "scholar_metrics": null,
   "publications": [
     {
+      "title": "Contrasting Impact of Peak-Aging Treatments on the Microstructure–Mechanical Property Relationship at Room and Elevated Temperatures in Mg-1Al-0.28Ca-0.13Mn-0.05Si (wt.%) Alloy",
+      "authors": "Sanyal, S., Bhuyan, P., Karnati, A. K., Koundinya N T B N, Kottada, R. S., Bandyopadhyay, T. K., and Mandal, S.",
+      "venue": "JOM",
+      "details": "",
+      "year": 2026,
+      "doi": "10.1007/s11837-026-08871-9",
+      "url": "https://doi.org/10.1007/s11837-026-08871-9",
+      "type": "journal",
+      "sources": [
+        "scholar",
+        "crossref"
+      ],
+      "added": "2026-11-16",
+      "order": 0,
+      "date": "2026-11-13"
+    },
+    {
       "title": "Microstructural Evolution and Mechanical Behavior of Magnetically Impelled Arc Butt Welded Dissimilar Joints of Super304H and T91 Steel Pipes",
       "authors": "Sahadevan, A., Ilangovan, R. K., Koundinya N T B N, Amirthalingam, M., Janaki Ram, G. D., and Kottada, R. S.",
       "venue": "Journal of Materials Engineering and Performance",
@@ -19,7 +36,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 0,
+      "order": 1,
       "date": "2026-03"
     },
     {
@@ -36,7 +53,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 1,
+      "order": 2,
       "date": "2025-10",
       "locked": true
     },
@@ -54,7 +71,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 2,
+      "order": 3,
       "date": "2025-10"
     },
     {
@@ -71,7 +88,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 3,
+      "order": 4,
       "date": "2025-08"
     },
     {
@@ -88,7 +105,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 4,
+      "order": 5,
       "date": "2025-05",
       "locked": true
     },
@@ -106,7 +123,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 5,
+      "order": 6,
       "date": "2025-01",
       "locked": true
     },
@@ -124,7 +141,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 6,
+      "order": 7,
       "date": "2024-12",
       "locked": true
     },
@@ -142,7 +159,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 7,
+      "order": 8,
       "date": "2024-05"
     },
     {
@@ -159,7 +176,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 8,
+      "order": 9,
       "date": "2024-05"
     },
     {
@@ -176,7 +193,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 9,
+      "order": 10,
       "date": "2023-09"
     },
     {
@@ -193,7 +210,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 10,
+      "order": 11,
       "date": "2023-01",
       "locked": true
     },
@@ -211,7 +228,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 11,
+      "order": 12,
       "date": "2022-08",
       "locked": true
     },
@@ -229,7 +246,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 12,
+      "order": 13,
       "date": "2021-09"
     },
     {
@@ -246,7 +263,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 13,
+      "order": 14,
       "date": "2021-01"
     },
     {
@@ -263,7 +280,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 14,
+      "order": 15,
       "date": "2020-12"
     },
     {
@@ -280,7 +297,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 15,
+      "order": 16,
       "date": "2020-12"
     },
     {
@@ -297,7 +314,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 16,
+      "order": 17,
       "date": "2020-07-27",
       "locked": true
     },
@@ -315,7 +332,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 17,
+      "order": 18,
       "date": "2020-07-27"
     },
     {
@@ -332,7 +349,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 18,
+      "order": 19,
       "date": "2020-07"
     },
     {
@@ -349,7 +366,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 19,
+      "order": 20,
       "date": "2019-06"
     },
     {
@@ -366,7 +383,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 20,
+      "order": 21,
       "date": "2019-03"
     },
     {
@@ -383,7 +400,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 21,
+      "order": 22,
       "date": "2019-03"
     },
     {
@@ -400,7 +417,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 22,
+      "order": 23,
       "date": "2018-11",
       "locked": true
     },
@@ -418,7 +435,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 23,
+      "order": 24,
       "date": "2018-10-01"
     },
     {
@@ -435,7 +452,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 24,
+      "order": 25,
       "date": "2018-02"
     },
     {
@@ -452,7 +469,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 25,
+      "order": 26,
       "date": "2018-02"
     },
     {
@@ -469,7 +486,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 26,
+      "order": 27,
       "date": "2018-02"
     },
     {
@@ -486,7 +503,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 27,
+      "order": 28,
       "date": "2018-01-01"
     },
     {
@@ -503,7 +520,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 28,
+      "order": 29,
       "date": "2017-03"
     },
     {
@@ -520,7 +537,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 29,
+      "order": 30,
       "date": "2016-10"
     },
     {
@@ -537,7 +554,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 30,
+      "order": 31,
       "date": "2016-09"
     },
     {
@@ -554,7 +571,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 31,
+      "order": 32,
       "date": "2015-10"
     },
     {
@@ -570,7 +587,7 @@
         "site"
       ],
       "added": "2026-10-18",
-      "order": 32
+      "order": 33
     },
     {
       "title": "Phase Evolution and Thermal Analysis of Nanocrystalline AlCrCuFeNiZn High Entropy Alloy Produced by Mechanical Alloying",
@@ -586,7 +603,7 @@
         "crossref"
       ],
       "added": "2026-10-18",
-      "order": 33,
+      "order": 34,
       "date": "2013-10"
     }
   ]
