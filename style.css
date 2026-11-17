@@ -75,7 +75,7 @@ main, .site-footer, .ribbon { position: relative; z-index: 1; }
 .site-header .wrap { height: var(--header-h); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); }
 .brand:hover { text-decoration: none; }
-.brand-logo { width: 34px; height: 34px; flex-shrink: 0; display: block; }
+.brand-logo { height: 36px; width: auto; flex-shrink: 0; display: block; }
 .brand-text { display: grid; line-height: 1.15; }
 .brand-top { display: flex; align-items: baseline; gap: 8px; }
 .brand-name { font-weight: 700; font-size: var(--fs-body); letter-spacing: -0.01em; }
@@ -276,7 +276,7 @@ a.pub-cover:hover { transform: scale(1.04); text-decoration: none; }
 .foot-grid a:hover { color: var(--ink); }
 .foot-brand .brand-name { font-size: var(--fs-small); }
 .foot-brand .brand-sub { display: block; font-size: 0.875rem; color: var(--ink-3); }
-.foot-brand .brand-logo { width: 28px; height: 28px; }
+.foot-brand .brand-logo { height: 30px; width: auto; }
 .foot-brand p { margin-top: 10px; max-width: 34ch; }
 .foot-grid address { font-size: 0.875rem; line-height: 1.6; color: var(--ink-3); }
 .foot-base { border-top: 1px solid var(--line); padding-block: 14px calc(14px + env(safe-area-inset-bottom, 0px)); color: var(--ink-4); font-size: 0.875rem; }
